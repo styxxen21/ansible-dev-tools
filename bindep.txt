@@ -1,3 +1,23 @@
 python3-devel [platform:redhat]
 oniguruma-devel [test platform:rpm]
 libonig-dev [test platform:dpkg]
+python3-devel
+oniguruma-devel
+sshpass
+ping
+krb5-libs
+krb5-workstation
+krb5-devel
+python-kerberos
+crypto-policies-scripts
+libxml2-devel
+gcc
+systemd-devel
+dnf
+openldap-devel
+nmap-ncat
+net-tools
+initscripts
+unixODBC-devel
+sudo
+dnsutils
