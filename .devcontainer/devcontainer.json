@@ -12,7 +12,7 @@
     // Use ${localEnv:HOME} to expand the host home directory, or replace with /Users/yourusername
     "source=${localEnv:HOME}/Documents/GitHub,target=/home/runner/github,type=bind,consistency=cached"
   ],
-  "postCreateCommand": "dnf -y install podman podman-docker || true",
+  "postCreateCommand": "bash /workspaces/ansible-dev-tools/.devcontainer/setup-foam.sh",
   "updateRemoteUserUID": true,
   "customizations": {
     "vscode": {
@@ -67,7 +67,12 @@
         "jakob101.relativepath",
         "ue.alphabetical-sorter",
         "gruntfuggly.triggertaskonsave",
-        "timonwong.shellcheck"
+        "timonwong.shellcheck",
+        "foam-vscode.foam-vscode",
+        "yzhang.markdown-all-in-one",
+        "kortina.vscode-markdown-notes",
+        "tchayen.markdown-links",
+        "shd101wyy.markdown-preview-enhanced"
       ]
     }
   }

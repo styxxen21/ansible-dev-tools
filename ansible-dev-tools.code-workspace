@@ -20,6 +20,9 @@
 		},
 		{
 			"path": "../github/volvo-cars/Hosting-Ansible-TestArea"
+		},
+		{
+			"path": "/workspaces/notes"
 		}
 	],
 	"settings": {
