@@ -26,6 +26,18 @@
         "kind": "none",
         "isDefault": true
       }
-    }
+    },
+    {
+      "label": "Reveal Terminal",
+      "type": "shell",
+      "command": "echo Terminal opened",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "echo": true },
+      "runOptions": {
+        "runOn": "folderOpen"
+        },
+      "problemMatcher": [] }
   ]
 }

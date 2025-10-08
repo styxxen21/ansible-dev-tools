@@ -11,6 +11,15 @@
 		},
 		{
 			"path": "../../home/runner/github/Hosting-Database-Playbooks"
+		},
+		{
+			"path": "../github/volvo-cars/Hosting-Ansible-Actions"
+		},
+		{
+			"path": "../github/volvo-cars/Hosting-Ansible-DummyRepo"
+		},
+		{
+			"path": "../github/volvo-cars/Hosting-Ansible-TestArea"
 		}
 	],
 	"settings": {

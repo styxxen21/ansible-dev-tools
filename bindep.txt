@@ -21,3 +21,5 @@ initscripts
 unixODBC-devel
 sudo
 dnsutils
+podman
+podman-docker

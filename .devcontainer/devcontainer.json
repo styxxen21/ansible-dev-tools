@@ -12,6 +12,7 @@
     // Use ${localEnv:HOME} to expand the host home directory, or replace with /Users/yourusername
     "source=${localEnv:HOME}/Documents/GitHub,target=/home/runner/github,type=bind,consistency=cached"
   ],
+  "postCreateCommand": "dnf -y install podman podman-docker || true",
   "updateRemoteUserUID": true,
   "customizations": {
     "vscode": {
@@ -52,6 +53,20 @@
         "ms-python.pylint",
         "ms-python.python",
         "streetsidesoftware.code-spell-checker",
+        "chouzz.vscode-better-align",
+        "dzhavat.bracket-pair-toggler",
+        "bierner.github-markdown-preview",
+        "hashicorp.terraform",
+        "bierner.markdown-checkbox",
+        "bierner.markdown-emoji",
+        "bierner.markdown-footnotes",
+        "bierner.markdown-mermaid",
+        "bierner.markdown-preview-github-styles",
+        "migueltarga.ssh-control",
+        "charliermarsh.ruff",
+        "jakob101.relativepath",
+        "ue.alphabetical-sorter",
+        "gruntfuggly.triggertaskonsave",
         "timonwong.shellcheck"
       ]
     }
