@@ -12,7 +12,7 @@
     // Use ${localEnv:HOME} to expand the host home directory, or replace with /Users/yourusername
     "source=${localEnv:HOME}/Documents/GitHub,target=/home/runner/github,type=bind,consistency=cached"
   ],
-  "postCreateCommand": "bash /workspaces/ansible-dev-tools/.devcontainer/setup-foam.sh",
+  "postCreateCommand": "bash /workspaces/ansible-dev-tools/scripts/setup-foam.sh",
   "updateRemoteUserUID": true,
   "customizations": {
     "vscode": {
