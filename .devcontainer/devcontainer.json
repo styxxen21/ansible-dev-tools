@@ -8,6 +8,10 @@
     "/dev/fuse",
     "--hostname=ansible-dev-container"
   ],
+  "mounts": [
+    // Use ${localEnv:HOME} to expand the host home directory, or replace with /Users/yourusername
+    "source=${localEnv:HOME}/Documents/GitHub,target=/home/runner/github,type=bind,consistency=cached"
+  ],
   "updateRemoteUserUID": true,
   "customizations": {
     "vscode": {

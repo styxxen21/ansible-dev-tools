@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../github/styxxen21/Hosting-Ansible-Collections"
+		},
+		{
+			"path": "../github/styxxen21/Hosting-Ansible-Playbooks"
+		},
+		{
+			"path": "../../home/runner/github/Hosting-Database-Playbooks"
+		}
+	],
+	"settings": {
+		"markiscodecoverage.searchCriteria": ".cache/.coverage/lcov.info",
+		"mypy-type-checker.importStrategy": "fromEnvironment",
+		"triggerTaskOnSave.tasks": {
+			"pydoclint": [
+				"*.py"
+			]
+		},
+		"ansible.python.interpreterPath": "/usr/bin/python",
+		"ansible.validation.lint.path": "/root/.local/bin/ansible-lint",
+		"ansible.validation.enabled": true,
+		"ansible.validation.lint.enabled": true
+	}
+}

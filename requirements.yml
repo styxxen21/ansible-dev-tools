@@ -4,9 +4,8 @@ collections:
   - name: ansible.netcommon
   - name: ansible.posix
   - name: ansible.scm
-  - name: ansible.utils
-  - name: ansible.controller
-    version: 4.6.10
+  # - name: ansible.controller
+  #   version: 4.6.10
   - name: ansible.hub
     version: 1.0.0
   - name: ansible.posix

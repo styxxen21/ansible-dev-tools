@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../github/styxxen21/Hosting-Ansible-Collections"
+		},
+		{
+			"path": "../../github/styxxen21/Hosting-Ansible-Playbooks"
+		}
+	],
+	"settings": {
+		"markiscodecoverage.searchCriteria": ".cache/.coverage/lcov.info",
+		"mypy-type-checker.importStrategy": "fromEnvironment"
+	}
+}
