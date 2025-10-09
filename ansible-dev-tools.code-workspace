@@ -1,7 +1,28 @@
 {
 	"folders": [
 		{
-			"path": "/home/runner/github"
+			"path": "/home/runner/github/ansible-dev-tools"
+		},
+		{
+			"path": "/home/runner/github/Hosting-Ansible-Actions"
+		},
+		{
+			"path": "/home/runner/github/Hosting-Ansible-Collections"
+		},
+		{
+			"path": "/home/runner/github/Hosting-Ansible-DummyRepo"
+		},
+		{
+			"path": "/home/runner/github/Hosting-Ansible-Playbooks"
+		},
+		{
+			"path": "/home/runner/github/Hosting-Ansible-TestArea"
+		},
+		{
+			"path": "/home/runner/github/Hosting-Database-Playbooks"
+		},
+		{
+			"path": "/home/runner/github/notes"
 		}
 	],
 	"settings": {
