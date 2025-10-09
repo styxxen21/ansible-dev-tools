@@ -11,7 +11,7 @@
   "mounts": [
     "source=${localEnv:HOME}/Documents/GitHub,target=/home/runner/github,type=bind,consistency=consistent"
   ],
-  "postCreateCommand": "bash /workspaces/ansible-dev-tools/scripts/setup-foam.sh",
+  "postCreateCommand": "bash /workspaces/ansible-dev-tools/scripts/setup-extras.sh",
   "updateRemoteUserUID": true,
   "customizations": {
     "vscode": {
