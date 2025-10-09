@@ -1,12 +1,6 @@
 {
 	"folders": [
 		{
-			"path": "."
-		},
-		{
-			"path": "/workspaces/notes"
-		},
-		{
 			"path": "/home/runner/github"
 		}
 	],
@@ -19,7 +13,7 @@
 			]
 		},
 		"ansible.python.interpreterPath": "/usr/bin/python",
-		"ansible.validation.lint.path": "/root/.local/bin/ansible-lint",
+		"ansible.validation.lint.path": "ansible-lint",
 		"ansible.validation.enabled": true,
 		"ansible.validation.lint.enabled": true
 	}
