@@ -76,6 +76,7 @@
         "gruntfuggly.todo-tree",
         "hashicorp.terraform",
         "mhutchie.git-graph",
+        "dionmunk.vscode-notes",
         "rangav.vscode-thunder-client"
       ]
     }
