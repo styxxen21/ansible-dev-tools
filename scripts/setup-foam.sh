@@ -6,8 +6,8 @@ dnf -y install podman podman-docker wget bind-utils || true
 
 # Create Foam workspace structure
 echo "Setting up Foam workspace..."
-mkdir -p /workspaces/notes/{daily,projects,snippets,todos,ansible,encrypted}
-cd /workspaces/notes || exit 1
+mkdir -p /home/runner/github/notes/{daily,projects,snippets,todos,ansible,encrypted}
+cd /home/runner/github/notes || exit 1
 
 # Initialize git repository
 git init --quiet || true

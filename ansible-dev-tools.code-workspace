@@ -4,25 +4,10 @@
 			"path": "."
 		},
 		{
-			"path": "../github/styxxen21/Hosting-Ansible-Collections"
-		},
-		{
-			"path": "../github/styxxen21/Hosting-Ansible-Playbooks"
-		},
-		{
-			"path": "../../home/runner/github/Hosting-Database-Playbooks"
-		},
-		{
-			"path": "../github/volvo-cars/Hosting-Ansible-Actions"
-		},
-		{
-			"path": "../github/volvo-cars/Hosting-Ansible-DummyRepo"
-		},
-		{
-			"path": "../github/volvo-cars/Hosting-Ansible-TestArea"
-		},
-		{
 			"path": "/workspaces/notes"
+		},
+		{
+			"path": "/home/runner/github"
 		}
 	],
 	"settings": {
