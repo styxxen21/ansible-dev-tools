@@ -1,5 +1,8 @@
 {
 	"folders": [
+				{
+			"path": "/home/runner/github/MyNotes"
+		},
 		{
 			"path": "/home/runner/github/ansible-dev-tools"
 		},
