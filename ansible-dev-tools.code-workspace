@@ -36,6 +36,10 @@
 		"ansible.python.interpreterPath": "/usr/bin/python",
 		"ansible.validation.lint.path": "ansible-lint",
 		"ansible.validation.enabled": true,
-		"ansible.validation.lint.enabled": true
+		"ansible.validation.lint.enabled": true,
+		"cSpell.words": [
+			"gotsvl",
+			"volvocars"
+		]
 	}
 }
