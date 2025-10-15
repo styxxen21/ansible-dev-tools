@@ -9,7 +9,8 @@
     "--hostname=ansible-dev-container"
   ],
   "mounts": [
-    "source=${localEnv:HOME}/Documents/GitHub,target=/home/runner/github,type=bind,consistency=consistent"
+    "source=${localEnv:HOME}/Documents/GitHub,target=/home/runner/github,type=bind,consistency=consistent",
+    "source=/Users/KNOLFAL1/Documents/notes,target=/home/runner/notes,type=bind,consistency=consistent"
   ],
   "postCreateCommand": "bash /workspaces/ansible-dev-tools/scripts/setup-extras.sh",
   "updateRemoteUserUID": true,

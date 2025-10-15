@@ -84,6 +84,7 @@ update_ansible_config() {
     # Replace token placeholder with actual token
     print_status "$GREEN" "✅ Starting update of ansible.cfg with AAP Hub token"
     sed -e "s/$Token_Placeholder/$AAP_Hub_Token/;w $Config_File_Destination_Path" "$Config_File_Source_Path"
+    print_status "$YELLOW" "📝 Updating ansible.cfg with AAP Hub token..."
     # if sed -i "s/Hub_Token/$AAP_Hub_Token/g" "$Config_File_Source_Path"; then
     #     print_status "$GREEN" "✅ Successfully updated ansible.cfg with AAP Hub token"
     # else

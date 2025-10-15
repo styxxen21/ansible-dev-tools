@@ -1,28 +1,28 @@
 {
 	"folders": [
-				{
+		{
 			"path": "/home/runner/github/MyNotes"
 		},
 		{
 			"path": "/home/runner/github/ansible-dev-tools"
 		},
 		{
-			"path": "/home/runner/github/Hosting-Ansible-Actions"
+			"path": "../styxxen21/Hosting-Ansible-Playbooks"
 		},
 		{
-			"path": "/home/runner/github/Hosting-Ansible-Collections"
+			"path": "../styxxen21/Hosting-Ansible-Collections"
 		},
 		{
-			"path": "/home/runner/github/Hosting-Ansible-DummyRepo"
+			"path": "../volvo-cars/Hosting-Ansible-Actions"
 		},
 		{
-			"path": "/home/runner/github/Hosting-Ansible-Playbooks"
+			"path": "../volvo-cars/Hosting-Ansible-DummyRepo"
 		},
 		{
-			"path": "/home/runner/github/Hosting-Ansible-TestArea"
+			"path": "../volvo-cars/Hosting-Ansible-TestArea"
 		},
 		{
-			"path": "/home/runner/github/Hosting-Database-Playbooks"
+			"path": "../volvo-cars/Hosting-Database-Playbooks"
 		}
 	],
 	"settings": {

@@ -24,7 +24,7 @@
 GIT_USERNAME="${GIT_USERNAME:-styxxen21}"
 GIT_EMAIL="${GIT_EMAIL:-knolfal1@volvocars.com}"
 GITHUB_USER="${GITHUB_USER:-${GIT_USERNAME}}"
-WORKSPACE_BASE="${WORKSPACE_BASE:-/workspaces/github}"
+WORKSPACE_BASE="${WORKSPACE_BASE:-/home/runner/github/}"
 
 # Validate required variables
 if [[ -z "$GIT_USERNAME" || -z "$GIT_EMAIL" ]]; then
@@ -43,17 +43,39 @@ echo "📁 Creating workspace directories..."
 mkdir -p "$WORKSPACE_BASE/$GITHUB_USER"
 mkdir -p "$WORKSPACE_BASE/volvo-cars"
 
+# Function to clone repository with error handling
+clone_repository() {
+    local RepoUrl="$1"
+    local TargetDir="$2"
+    local RepoName
+    RepoName=$(basename "$RepoUrl" .git)
+
+    if [[ -d "$TargetDir" ]]; then
+        echo "📂 Repository $RepoName already exists, skipping..."
+        return 0
+    fi
+
+    echo "📥 Cloning $RepoName..."
+    if git clone "$RepoUrl" "$TargetDir"; then
+        echo "✅ Successfully cloned $RepoName"
+        return 0
+    else
+        echo "❌ Failed to clone $RepoUrl"
+        return 1
+    fi
+}
+
 # Clone personal repositories
 echo "📥 Cloning personal repositories for $GITHUB_USER..."
-git clone "https://github.com/$GITHUB_USER/Hosting-Ansible-Playbooks" "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Ansible-Playbooks"
-git clone "https://github.com/$GITHUB_USER/Hosting-Ansible-Collections" "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Ansible-Collections"
+clone_repository "https://github.com/$GITHUB_USER/Hosting-Ansible-Playbooks" "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Ansible-Playbooks"
+clone_repository "https://github.com/$GITHUB_USER/Hosting-Ansible-Collections" "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Ansible-Collections"
 
 # Clone organization repositories
 echo "📥 Cloning Volvo Cars organization repositories..."
-git clone "https://github.com/volvo-cars/Hosting-Database-Playbooks" "$WORKSPACE_BASE/volvo-cars/Hosting-Database-Playbooks"
-git clone "https://github.com/volvo-cars/Hosting-Ansible-Actions" "$WORKSPACE_BASE/volvo-cars/Hosting-Ansible-Actions"
-git clone "https://github.com/volvo-cars/Hosting-Ansible-TestArea" "$WORKSPACE_BASE/volvo-cars/Hosting-Ansible-TestArea"
-git clone "https://github.com/volvo-cars/Hosting-Ansible-DummyRepo" "$WORKSPACE_BASE/volvo-cars/Hosting-Ansible-DummyRepo"
+clone_repository "https://github.com/volvo-cars/Hosting-Database-Playbooks" "$WORKSPACE_BASE/volvo-cars/Hosting-Database-Playbooks"
+clone_repository "https://github.com/volvo-cars/Hosting-Ansible-Actions" "$WORKSPACE_BASE/volvo-cars/Hosting-Ansible-Actions"
+clone_repository "https://github.com/volvo-cars/Hosting-Ansible-TestArea" "$WORKSPACE_BASE/volvo-cars/Hosting-Ansible-TestArea"
+clone_repository "https://github.com/volvo-cars/Hosting-Ansible-DummyRepo" "$WORKSPACE_BASE/volvo-cars/Hosting-Ansible-DummyRepo"
 
 # Update ansible configuration
 echo "⚙️ Updating Ansible configuration..."
@@ -61,11 +83,15 @@ echo "⚙️ Updating Ansible configuration..."
 
 # Install ansible collections
 echo "📦 Installing Ansible collections..."
-ansible-galaxy collection install -r "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Ansible-Playbooks/requirements.yml"
-ansible-galaxy collection install "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Ansible-Playbooks/collections/hosting_internal"
+ansible-galaxy collection install -r "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Ansible-Playbooks/requirements.yml" --force
+ansible-galaxy collection install "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Ansible-Playbooks/collections/hosting_internal" --force
 
 # Install python requirements
 echo "🐍 Installing Python requirements..."
 pip install -r ~/.ansible/collections/ansible_collections/vmware/vmware/requirements.txt --no-input
 
-echo "✅ Git configuration and repository setup completed successfully!"
+echo "✅ Git configuration and repository setup completed successfully! 🎉"
+echo ""
+echo "📋 Summary:"
+echo "  👤 Git User: $GIT_USERNAME ($GIT_EMAIL)"
+echo "  📁 Workspace: $WORKSPACE_BASE"
