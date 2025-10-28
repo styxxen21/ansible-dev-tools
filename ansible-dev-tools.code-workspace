@@ -39,7 +39,16 @@
 		"ansible.validation.lint.enabled": true,
 		"cSpell.words": [
 			"gotsvl",
+			"smtpauth",
 			"volvocars"
-		]
+		],
+		"cSpell.customDictionaries": {
+			"custom-dictionary-workspace": {
+				"name": "custom-dictionary-workspace",
+				"path": "${workspaceFolder:MyNotes}/.cspell/custom-dictionary-workspace.txt",
+				"addWords": true,
+				"scope": "workspace"
+			}
+		}
 	}
 }
