@@ -23,6 +23,9 @@
 		},
 		{
 			"path": "../volvo-cars/Hosting-Database-Playbooks"
+		},
+		{
+			"path": "../volvo-cars/backstage"
 		}
 	],
 	"settings": {
@@ -33,7 +36,7 @@
 				"*.py"
 			]
 		},
-		"ansible.python.interpreterPath": "/usr/bin/python",
+		"ansible.python.interpreterPath": "/bin/python",
 		"ansible.validation.lint.path": "ansible-lint",
 		"ansible.validation.enabled": true,
 		"ansible.validation.lint.enabled": true,
