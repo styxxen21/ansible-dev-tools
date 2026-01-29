@@ -78,7 +78,8 @@
         "hashicorp.terraform",
         "mhutchie.git-graph",
         "dionmunk.vscode-notes",
-        "rangav.vscode-thunder-client"
+        "rangav.vscode-thunder-client",
+        "mermaidchart.vscode-mermaid-chart"
       ]
     }
   }

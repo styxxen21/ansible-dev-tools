@@ -22,10 +22,13 @@
 			"path": "../volvo-cars/Hosting-Ansible-TestArea"
 		},
 		{
-			"path": "../volvo-cars/Hosting-Database-Playbooks"
+			"path": "../styxxen21/Hosting-Database-Playbooks"
 		},
 		{
 			"path": "../volvo-cars/backstage"
+		},
+		{
+			"path": "../volvo-cars/ucp-github-pr-api"
 		}
 	],
 	"settings": {
