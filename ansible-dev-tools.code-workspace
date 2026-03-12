@@ -29,6 +29,19 @@
 		},
 		{
 			"path": "../volvo-cars/ucp-github-pr-api"
+		},
+		{
+			"path": "../volvo-cars/platform-infrastructure-framework-api"
+		},
+		{
+			"path": "../volvo-cars/platform-infrastructure-framework-workspace"
+		},
+		{
+			"path": "../volvo-cars/ucp-aap-manager"
+		},
+		{
+			"name": "ucp-packages",
+			"path": "../volvo-cars/ucp-packages"
 		}
 	],
 	"settings": {

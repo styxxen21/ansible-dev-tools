@@ -22,6 +22,6 @@ az login
 /bin/bash "$WORKSPACE/scripts/configure-git.sh"
 /bin/bash "$WORKSPACE/scripts/setup-extras.sh"
 
-# /bin/bash "$WORKSPACE/scripts/update-ansible-config.sh"
+/bin/bash "$WORKSPACE/scripts/update-ansible-config.sh"
 
 # pip install -r ~/.ansible/collections/ansible_collections/vmware/vmware/requirements.txt --no-input
