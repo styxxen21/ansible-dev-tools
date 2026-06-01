@@ -16,31 +16,16 @@
 			"path": "../volvo-cars/Hosting-Ansible-Actions"
 		},
 		{
-			"path": "../volvo-cars/Hosting-Ansible-DummyRepo"
-		},
-		{
 			"path": "../volvo-cars/Hosting-Ansible-TestArea"
 		},
 		{
 			"path": "../styxxen21/Hosting-Database-Playbooks"
 		},
 		{
-			"path": "../volvo-cars/backstage"
+			"name": "Hosting-Ansible-Devspaces",
+			"path": "../volvo-cars/Hosting-Ansible-Devspaces"
 		},
 		{
-			"path": "../volvo-cars/ucp-github-pr-api"
-		},
-		{
-			"path": "../volvo-cars/platform-infrastructure-framework-api"
-		},
-		{
-			"path": "../volvo-cars/platform-infrastructure-framework-workspace"
-		},
-		{
-			"path": "../volvo-cars/ucp-aap-manager"
-		},
-		{
-			"name": "ucp-packages",
 			"path": "../volvo-cars/ucp-packages"
 		}
 	],

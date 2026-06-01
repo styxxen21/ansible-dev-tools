@@ -6,7 +6,8 @@
     "--privileged",
     "--device",
     "/dev/fuse",
-    "--hostname=ansible-dev-container"
+    "--hostname=ansible-dev-container",
+    "--add-host=host.docker.internal:host-gateway"
   ],
   "updateRemoteUserUID": true,
   "customizations": {
