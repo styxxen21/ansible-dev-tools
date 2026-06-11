@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Install required packages
-echo "Installing packages: podman, podman-docker, wget, bind-utils..."
-dnf -y install podman podman-docker wget bind-utils ping glibc-langpack-en || true
+echo "Installing packages: podman, podman-docker, wget, bind-utils, ping, glibc-langpack-en, ripgrep..."
+dnf -y install podman podman-docker wget bind-utils ping glibc-langpack-en ripgrep pydoclint || true
 pip3 install gh
 echo "✅ Extra packages has been installed successfully!"
 

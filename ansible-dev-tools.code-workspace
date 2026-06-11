@@ -10,22 +10,6 @@
 			"path": "../styxxen21/Hosting-Ansible-Playbooks"
 		},
 		{
-			"path": "../styxxen21/Hosting-Ansible-Collections"
-		},
-		{
-			"path": "../volvo-cars/Hosting-Ansible-Actions"
-		},
-		{
-			"path": "../volvo-cars/Hosting-Ansible-TestArea"
-		},
-		{
-			"path": "../styxxen21/Hosting-Database-Playbooks"
-		},
-		{
-			"name": "Hosting-Ansible-Devspaces",
-			"path": "../volvo-cars/Hosting-Ansible-Devspaces"
-		},
-		{
 			"path": "../volvo-cars/ucp-packages"
 		}
 	],
